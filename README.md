@@ -65,8 +65,8 @@ Deployment: PythonAnywhere (can work with any cloud platform)
 
 # Clone Repository
 
-git clone https://github.com/your-username/retailer-recommendation.git
-cd retailer-recommendation
+git clone https://github.com/y0xCyberAnkit/Qwibuy.git
+cd Qwibuy
 
 
 # Create Virtual Environment
