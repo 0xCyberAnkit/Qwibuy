@@ -1,0 +1,22 @@
+{
+    "P001": [ "Parle-G Biscuits", 20,"Biscuits","https://th.bing.com/th/id/OIP.lHcvlnXuTuFansSOeIQySwHaEk?w=282&h=180&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"],
+    "P002": [ "Tata Tea", "Tea",60,"https://th.bing.com/th/id/OIP.XVqDi-qzBYfzHJPcfcVIkwHaEl?w=299&h=185&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"],
+    "P003": [ "Good Day Cookies", 20,"Biscuits","https://th.bing.com/th/id/OIP.Oa6LceDlCvlY3mDNg0ujsgHaEl?w=285&h=180&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3" ],
+    "P004": ["Britannia Cake", "Cake",30,"https://th.bing.com/th/id/OIP.WvfHYp2VIZ2LR6L1UnYj-gHaFj?w=215&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"],
+    "P005": ["Red Label Tea", "Tea",60,"https://th.bing.com/th/id/OIP.-VCvEzab3GVoCQyIaVTOgwHaE8?w=261&h=180&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"],
+    "P006": ["Maggie Noodles", "Noodles",24,"https://th.bing.com/th/id/OIP.6EUgVowQLt0pEI0CHl_gaQHaFj?w=189&h=142&c=7&r=0&o=5&dpr=1.4&pid=1.7"],
+    "P007": ["Chips Lays", "Snacks",20,"https://th.bing.com/th/id/OIP.XQY1H3L16WKGbLsBAqQj1AHaE8?w=286&h=191&c=7&r=0&o=5&dpr=1.4&pid=1.7"],
+    "P008": ["Kurkure", "Snacks",20,"https://th.bing.com/th/id/OIP.kGEsY69zs52N0KV6qjvHJwHaEl?w=281&h=180&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"],
+    "P009": ["Bourbon Biscuit", "Biscuits",25,"https://th.bing.com/th/id/OIP.qGApIR0e0HEBr437VK2pDgHaD4?w=304&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"],
+    "P010": ["Sunfeast Dark Fantasy", "Cake",30,"https://th.bing.com/th/id/OIP.fPAQXf1kzgCBXc5IiXelEwHaGM?w=214&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"],
+    "P011": ["Oreo Biscuit", "Biscuits",25,"https://th.bing.com/th/id/OIP.i7EhHjAvItmApfLsR5-WmQHaDt?w=312&h=174&c=7&r=0&o=5&dpr=1.4&pid=1.7"],
+    "P012": ["Nescafe Coffee", "Coffee",80,"https://th.bing.com/th/id/OIP.BH8f7pijARbTKOkVFNX9TgHaFF?w=269&h=185&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"],
+    "P013": ["Pepsi 500ml", "Soft Drink",40,"https://th.bing.com/th/id/OIP.5fuu30ubU82TS4AOLLKTGwHaEK?w=308&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"],
+    "P014": ["Coca Cola 500ml", "Soft Drink",40,"https://th.bing.com/th/id/OIP.16Gbo7RuXEKB5HQ4RffozgHaEK?w=285&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"],
+    "P015": ["Salted Butter", "Dairy",75,"https://th.bing.com/th/id/OIP.kjhoOeHOIbgSPuywSsnxNQHaE7?w=267&h=180&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"],
+    "P016": ["Sugar Pack 1kg", "Groceries",80,"https://th.bing.com/th/id/OIP.gN-NiQNxsIWcYNc7Ar3t1gHaE8?w=295&h=197&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"],
+    "P017": ["Aashirvaad Atta 5kg", "Groceries",120,"https://th.bing.com/th/id/OIP.69dBr7_Q1-fHsTJCHeCNpAHaEl?w=317&h=196&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"],
+    "P018": ["Paneer 200g", "Dairy",60,"https://th.bing.com/th/id/OIP._iRGLRq68MLZcdx5addv9AHaFj?w=248&h=186&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"],
+    "P019": ["Soft Drink Sprite", "Soft Drink",40,"https://th.bing.com/th/id/OIP.84olvYR-MQbnKPF3VLQNVAHaEL?w=330&h=186&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"],
+    "P020": ["Milk Packet 500ml", "Dairy",45,"https://th.bing.com/th/id/OIP.t3SyW-Ln05siE4pcnKwiQwHaEK?w=291&h=181&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3"]
+}

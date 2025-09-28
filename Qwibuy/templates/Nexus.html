@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qwibuy | Global B2B Sourcing Platform</title>
+  <!-- Load Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Configure Tailwind to use Inter font and custom colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            'nexus-blue': '#1E40AF',
+            'dark-text': '#1F2937',
+            'light-bg': '#F9FAFB',
+            'section-bg': '#EBF4FF',
+            'stat-green': '#059669',
+            'stat-red': '#DC2626',
+            'stat-yellow': '#F59E0B',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+
+    .cta-primary {
+      padding: 0.625rem 1.25rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .cta-primary:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .dashboard-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .dashboard-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    }
+
+    /* Fade-in animations */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Bounce-in for steps */
+    .step-bounce {
+      transform: scale(0.8);
+      opacity: 0;
+      transition: transform 0.6s ease, opacity 0.6s ease;
+    }
+    .step-bounce.visible {
+      transform: scale(1);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="font-sans text-dark-text bg-light-bg min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-40">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+
+            <!-- Group 1: Logo and Main Nav Links (Left Side) -->
+            <div class="flex items-center space-x-8">
+                <!-- Logo -->
+                <a href="Nexus.html" class="text-3xl font-extrabold text-nexus-blue tracking-tight transition duration-300">
+                    Qwibuy
+                </a>
+
+                <!-- Navigation Links (Desktop Only) -->
+                <div class="hidden md:flex space-x-6 text-dark-text font-medium items-center">
+                    <!-- Active link for Home -->
+                    <a href="" class="text-nexus-blue border-b-2 border-nexus-blue pb-1">Home</a>
+                    <a href="/shop" class="hover:text-nexus-blue transition duration-200">Shop</a>
+                    <a href="/portal" class="hover:text-nexus-blue transition duration-200">My Portal</a>
+                    <a href="/profile" class="hover:text-nexus-blue transition duration-200">Profile</a>
+                </div>
+            </div>
+
+            <!-- Group 2: User Info & Login/Register Link (Right Side) -->
+            <div class="flex items-center space-x-4">
+                <!-- Login/Register Button -->
+                <a href="login.html" class="hidden md:inline-block cta-primary bg-white text-nexus-blue border-2 border-nexus-blue py-2 px-4 text-sm hover:bg-nexus-blue hover:text-white shadow-none">
+                  {{name}}
+                </a>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-button" class="md:hidden p-2 text-dark-text hover:text-nexus-blue">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Flyout -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg border-t border-gray-100 absolute w-full">
+            <a href="nexus.html" class="block px-4 py-2 text-nexus-blue bg-section-bg font-semibold">Home</a>
+            <a href="shop.html" class="block px-4 py-2 text-dark-text hover:bg-section-bg">Shop</a>
+            <a href="my portal.html" class="block px-4 py-2 text-dark-text hover:bg-section-bg">My Portal</a>
+            <a href="my portal.html" class="block px-4 py-2 text-dark-text hover:bg-section-bg">Profile</a>
+            <a href="login.html" class="block px-4 py-3 bg-white text-nexus-blue border-t border-nexus-blue text-center font-bold hover:bg-gray-50">Login/Register</a>
+        </div>
+    </header>
+
+
+  <!-- Main Content -->
+  <main class="flex-grow">
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center bg-no-repeat bg-fixed bg-section-bg pt-16 pb-24 lg:pt-24 lg:pb-32 fade-in" 
+    style="background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-a8e4-622f-a316-976735b11485/raw?se=2025-09-27T23%3A04%3A30Z&sp=r&sv=2024-08-04&sr=b&scid=606da3b8-c5e4-5ae2-a4fe-5a11850ade3b&skoid=03727f49-62d3-42ac-8350-1c0e6559d238&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-27T20%3A01%3A27Z&ske=2025-09-28T20%3A01%3A27Z&sks=b&skv=2024-08-04&sig=agjbuWTgm%2B5Jjxi%2BD2Ax86d%2Bw/4dT51G/O6GsuU08dA%3D')">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-lg font-semibold text-nexus-blue mb-4 uppercase tracking-wider">The Future of B2B Sourcing</p>
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-dark-text leading-tight mb-6">
+          Global Procurement, 
+          <div id="typing-text" class="text-nexus-blue"></div>
+        </h1>
+        <p class="max-w-3xl mx-auto text-xl text-gray-600 mb-10">
+          Connect directly with vetted manufacturers worldwide. Get multiple quotes, compare transparently, and manage your entire supply chain in one powerful platform.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+          <a href="my portal.html" class="cta-primary bg-nexus-blue text-white hover:bg-blue-700">
+            Start Your First RFQ
+          </a>
+          <a href="shop.html" class="cta-primary bg-white text-dark-text border-2 border-gray-300 hover:bg-gray-50 shadow-none">
+            Explore Supplier Directory
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simple 3-Step Process -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center text-dark-text mb-16 fade-in">The Simple 3-Step Process</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="text-center step-bounce">
+            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-nexus-blue text-white text-3xl font-extrabold shadow-xl">1</div>
+            <h3 class="text-xl font-bold text-dark-text mb-2">Create RFQ</h3>
+            <p class="text-gray-600">Submit your detailed request for quotation for materials or services in minutes.</p>
+          </div>
+          <div class="text-center step-bounce">
+            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-nexus-blue text-white text-3xl font-extrabold shadow-xl">2</div>
+            <h3 class="text-xl font-bold text-dark-text mb-2">Review Quotes</h3>
+            <p class="text-gray-600">Receive competitive bids from global suppliers and select the best partner for your needs.</p>
+          </div>
+          <div class="text-center step-bounce">
+            <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-nexus-blue text-white text-3xl font-extrabold shadow-xl">3</div>
+            <h3 class="text-xl font-bold text-dark-text mb-2">Order & Track</h3>
+            <p class="text-gray-600">Convert the quote into a Purchase Order and monitor production and delivery status live.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="bg-nexus-blue py-16 fade-in">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Ready to Transform Your Procurement?</h2>
+        <p class="text-xl text-blue-200 mb-8">Get started with a free account today.</p>
+        <a href="login.html" class="cta-primary bg-stat-green text-white hover:bg-green-600">
+          Sign Up Now
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="about" class="bg-dark-text text-white py-6 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:flex md:justify-between md:items-center">
+            <p class="text-sm opacity-80">&copy; 2025 Qwibuy. All rights reserved.</p>
+            <div class="mt-2 md:mt-0 space-x-6 text-xs">
+                <a href="#" class="hover:text-nexus-blue/70 transition duration-300">Support</a>
+                <a href="#" class="hover:text-nexus-blue/70 transition duration-300">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+  <!-- Animation Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if(mobileMenuButton){
+        mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+
+      // Intersection Observer for fade-in animations
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.2 });
+
+      document.querySelectorAll('.fade-in, .step-bounce').forEach(el => {
+        observer.observe(el);
+      });
+    });
+
+      // Typing effect for "Simplified"
+    document.addEventListener("DOMContentLoaded", () => {
+    const text = "Simplified.";
+    const typingElement = document.getElementById("typing-text");
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            typingElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 170); // typing speed (ms)
+        }
+    }
+
+    typeWriter();
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retailer Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b1b2f;
+            color: #fff;
+            padding: 20px;
+        }
+        h1 { text-align: center; color: #00ffea; }
+        .section {
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #2b2b4b;
+            box-shadow: 0 0 15px rgba(0,255,234,0.3);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        ul { list-style: none; padding: 0; }
+        li {
+            padding: 8px;
+            margin: 5px 0;
+            background-color: #1e1e3f;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        li:hover { transform: scale(1.05); background-color: #00ffea33; }
+        .emoji { font-size: 1.3em; margin-right: 10px; }
+        button {
+            background-color: #00ffea;
+            color: #1b1b2f;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        button:hover { background-color: #00cca0; }
+        input { padding: 8px; border-radius: 5px; border: none; margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <h1>🛒 Retailer Recommendations</h1>
+
+    <div>
+        <input type="number" id="retailer_id" placeholder="Enter Retailer ID" />
+        <button onclick="fetchRecommendations()">Get Recommendations</button>
+    </div>
+
+    <div class="section" id="new-products-section">
+        <h2>✨ New Products for Discovery</h2>
+        <ul id="new-products-list"></ul>
+    </div>
+
+    <div class="section" id="cross-sell-section">
+        <h2>🔗 Cross-Sell / Upsell</h2>
+        <ul id="cross-sell-list"></ul>
+    </div>
+
+    <div class="section" id="personalized-section">
+        <h2>💡 Personalized Picks</h2>
+        <ul id="personalized-list"></ul>
+    </div>
+
+    <div class="section">
+        <h2>Simulate Purchase</h2>
+        <input type="text" id="product_id" placeholder="Product ID" />
+        <input type="text" id="product_name" placeholder="Product Name" />
+        <input type="text" id="category" placeholder="Category" />
+        <button onclick="simulatePurchase()">Add Purchase</button>
+    </div>
+
+    <script>
+        async function fetchRecommendations() {
+            const retailerId = document.getElementById("retailer_id").value;
+            if (!retailerId) { alert("Enter retailer ID"); return; }
+
+            const res = await fetch(`/get_recommendations?retailer_id=${retailerId}`);
+            const data = await res.json();
+
+            updateSection("new-products-list", data.new_products);
+            updateSection("cross-sell-list", data.cross_sell);
+            updateSection("personalized-list", data.personalized_picks);
+        }
+
+        function updateSection(listId, items) {
+            const ul = document.getElementById(listId);
+            ul.innerHTML = "";
+            items.forEach(item => {
+                const li = document.createElement("li");
+                li.innerHTML = `<span class="emoji">🛍️</span>${item.product_name} (ID: ${item.product_id})`;
+                ul.appendChild(li);
+            });
+        }
+
+        async function simulatePurchase() {
+            const retailerId = document.getElementById("retailer_id").value;
+            const productId = document.getElementById("product_id").value;
+            const productName = document.getElementById("product_name").value;
+            const category = document.getElementById("category").value;
+
+            if (!retailerId || !productId || !productName || !category) {
+                alert("Fill all fields to simulate purchase");
+                return;
+            }
+
+            // Call Django view to update purchase
+            await fetch(`/simulate_purchase?retailer_id=${retailerId}&product_id=${productId}&product_name=${productName}&category=${category}`);
+
+            // Refresh recommendations
+            fetchRecommendations();
+        }
+    </script>
+</body>
+</html>

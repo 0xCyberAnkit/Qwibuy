@@ -1,0 +1,641 @@
+retailer_id,product_id,product_name,category
+101,P003,Good Day Cookies,Biscuits
+101,P015,Salted Butter,Dairy
+101,P004,Britannia Cake,Cake
+101,P005,Red Label Tea,Tea
+101,P009,Bourbon Biscuit,Biscuits
+101,P019,Soft Drink Sprite,Soft Drink
+102,P004,Britannia Cake,Cake
+102,P014,Coca Cola 500ml,Soft Drink
+102,P001,Parle-G Biscuits,Biscuits
+102,P009,Bourbon Biscuit,Biscuits
+102,P009,Bourbon Biscuit,Biscuits
+102,P019,Soft Drink Sprite,Soft Drink
+103,P010,Sunfeast Dark Fantasy,Cake
+103,P016,Sugar Pack 1kg,Groceries
+103,P011,Oreo Biscuit,Biscuits
+103,P005,Red Label Tea,Tea
+103,P002,Tata Tea,Tea
+103,P009,Bourbon Biscuit,Biscuits
+103,P004,Britannia Cake,Cake
+104,P009,Bourbon Biscuit,Biscuits
+104,P002,Tata Tea,Tea
+104,P007,Chips Lays,Snacks
+104,P008,Kurkure,Snacks
+104,P001,Parle-G Biscuits,Biscuits
+104,P004,Britannia Cake,Cake
+104,P014,Coca Cola 500ml,Soft Drink
+105,P006,Maggie Noodles,Noodles
+105,P014,Coca Cola 500ml,Soft Drink
+105,P001,Parle-G Biscuits,Biscuits
+105,P002,Tata Tea,Tea
+105,P017,Aashirvaad Atta 5kg,Groceries
+105,P002,Tata Tea,Tea
+106,P010,Sunfeast Dark Fantasy,Cake
+106,P003,Good Day Cookies,Biscuits
+106,P017,Aashirvaad Atta 5kg,Groceries
+106,P018,Paneer 200g,Dairy
+106,P015,Salted Butter,Dairy
+106,P015,Salted Butter,Dairy
+106,P010,Sunfeast Dark Fantasy,Cake
+107,P003,Good Day Cookies,Biscuits
+107,P013,Pepsi 500ml,Soft Drink
+107,P009,Bourbon Biscuit,Biscuits
+107,P001,Parle-G Biscuits,Biscuits
+107,P010,Sunfeast Dark Fantasy,Cake
+107,P002,Tata Tea,Tea
+108,P005,Red Label Tea,Tea
+108,P011,Oreo Biscuit,Biscuits
+108,P002,Tata Tea,Tea
+108,P013,Pepsi 500ml,Soft Drink
+108,P002,Tata Tea,Tea
+108,P020,Milk Packet 500ml,Dairy
+108,P010,Sunfeast Dark Fantasy,Cake
+108,P012,Nescafe Coffee,Coffee
+109,P003,Good Day Cookies,Biscuits
+109,P001,Parle-G Biscuits,Biscuits
+109,P009,Bourbon Biscuit,Biscuits
+109,P002,Tata Tea,Tea
+109,P001,Parle-G Biscuits,Biscuits
+109,P018,Paneer 200g,Dairy
+110,P008,Kurkure,Snacks
+110,P001,Parle-G Biscuits,Biscuits
+110,P007,Chips Lays,Snacks
+110,P003,Good Day Cookies,Biscuits
+110,P008,Kurkure,Snacks
+111,P011,Oreo Biscuit,Biscuits
+111,P004,Britannia Cake,Cake
+111,P005,Red Label Tea,Tea
+111,P009,Bourbon Biscuit,Biscuits
+111,P017,Aashirvaad Atta 5kg,Groceries
+112,P004,Britannia Cake,Cake
+112,P007,Chips Lays,Snacks
+112,P005,Red Label Tea,Tea
+112,P010,Sunfeast Dark Fantasy,Cake
+112,P001,Parle-G Biscuits,Biscuits
+112,P011,Oreo Biscuit,Biscuits
+112,P005,Red Label Tea,Tea
+112,P006,Maggie Noodles,Noodles
+113,P001,Parle-G Biscuits,Biscuits
+113,P002,Tata Tea,Tea
+113,P011,Oreo Biscuit,Biscuits
+113,P006,Maggie Noodles,Noodles
+113,P015,Salted Butter,Dairy
+113,P006,Maggie Noodles,Noodles
+113,P007,Chips Lays,Snacks
+114,P001,Parle-G Biscuits,Biscuits
+114,P009,Bourbon Biscuit,Biscuits
+114,P009,Bourbon Biscuit,Biscuits
+114,P003,Good Day Cookies,Biscuits
+114,P003,Good Day Cookies,Biscuits
+115,P005,Red Label Tea,Tea
+115,P008,Kurkure,Snacks
+115,P002,Tata Tea,Tea
+115,P008,Kurkure,Snacks
+115,P003,Good Day Cookies,Biscuits
+115,P015,Salted Butter,Dairy
+115,P015,Salted Butter,Dairy
+116,P002,Tata Tea,Tea
+116,P008,Kurkure,Snacks
+116,P018,Paneer 200g,Dairy
+116,P002,Tata Tea,Tea
+116,P018,Paneer 200g,Dairy
+116,P004,Britannia Cake,Cake
+116,P001,Parle-G Biscuits,Biscuits
+116,P013,Pepsi 500ml,Soft Drink
+117,P001,Parle-G Biscuits,Biscuits
+117,P016,Sugar Pack 1kg,Groceries
+117,P002,Tata Tea,Tea
+117,P016,Sugar Pack 1kg,Groceries
+117,P011,Oreo Biscuit,Biscuits
+117,P008,Kurkure,Snacks
+117,P010,Sunfeast Dark Fantasy,Cake
+117,P002,Tata Tea,Tea
+118,P015,Salted Butter,Dairy
+118,P015,Salted Butter,Dairy
+118,P007,Chips Lays,Snacks
+118,P009,Bourbon Biscuit,Biscuits
+118,P003,Good Day Cookies,Biscuits
+118,P005,Red Label Tea,Tea
+118,P009,Bourbon Biscuit,Biscuits
+119,P019,Soft Drink Sprite,Soft Drink
+119,P004,Britannia Cake,Cake
+119,P003,Good Day Cookies,Biscuits
+119,P020,Milk Packet 500ml,Dairy
+119,P011,Oreo Biscuit,Biscuits
+119,P004,Britannia Cake,Cake
+119,P002,Tata Tea,Tea
+120,P016,Sugar Pack 1kg,Groceries
+120,P015,Salted Butter,Dairy
+120,P003,Good Day Cookies,Biscuits
+120,P001,Parle-G Biscuits,Biscuits
+120,P017,Aashirvaad Atta 5kg,Groceries
+120,P005,Red Label Tea,Tea
+121,P003,Good Day Cookies,Biscuits
+121,P002,Tata Tea,Tea
+121,P005,Red Label Tea,Tea
+121,P011,Oreo Biscuit,Biscuits
+121,P003,Good Day Cookies,Biscuits
+121,P007,Chips Lays,Snacks
+122,P005,Red Label Tea,Tea
+122,P001,Parle-G Biscuits,Biscuits
+122,P005,Red Label Tea,Tea
+122,P004,Britannia Cake,Cake
+122,P004,Britannia Cake,Cake
+122,P006,Maggie Noodles,Noodles
+122,P020,Milk Packet 500ml,Dairy
+122,P016,Sugar Pack 1kg,Groceries
+123,P001,Parle-G Biscuits,Biscuits
+123,P002,Tata Tea,Tea
+123,P007,Chips Lays,Snacks
+123,P006,Maggie Noodles,Noodles
+123,P004,Britannia Cake,Cake
+123,P010,Sunfeast Dark Fantasy,Cake
+124,P009,Bourbon Biscuit,Biscuits
+124,P002,Tata Tea,Tea
+124,P015,Salted Butter,Dairy
+124,P003,Good Day Cookies,Biscuits
+124,P004,Britannia Cake,Cake
+125,P009,Bourbon Biscuit,Biscuits
+125,P007,Chips Lays,Snacks
+125,P002,Tata Tea,Tea
+125,P016,Sugar Pack 1kg,Groceries
+125,P006,Maggie Noodles,Noodles
+125,P013,Pepsi 500ml,Soft Drink
+126,P004,Britannia Cake,Cake
+126,P004,Britannia Cake,Cake
+126,P017,Aashirvaad Atta 5kg,Groceries
+126,P003,Good Day Cookies,Biscuits
+126,P003,Good Day Cookies,Biscuits
+126,P004,Britannia Cake,Cake
+126,P001,Parle-G Biscuits,Biscuits
+127,P009,Bourbon Biscuit,Biscuits
+127,P013,Pepsi 500ml,Soft Drink
+127,P004,Britannia Cake,Cake
+127,P003,Good Day Cookies,Biscuits
+127,P002,Tata Tea,Tea
+127,P003,Good Day Cookies,Biscuits
+127,P015,Salted Butter,Dairy
+127,P012,Nescafe Coffee,Coffee
+128,P013,Pepsi 500ml,Soft Drink
+128,P001,Parle-G Biscuits,Biscuits
+128,P004,Britannia Cake,Cake
+128,P003,Good Day Cookies,Biscuits
+128,P002,Tata Tea,Tea
+128,P004,Britannia Cake,Cake
+129,P007,Chips Lays,Snacks
+129,P011,Oreo Biscuit,Biscuits
+129,P001,Parle-G Biscuits,Biscuits
+129,P016,Sugar Pack 1kg,Groceries
+129,P010,Sunfeast Dark Fantasy,Cake
+130,P007,Chips Lays,Snacks
+130,P001,Parle-G Biscuits,Biscuits
+130,P011,Oreo Biscuit,Biscuits
+130,P019,Soft Drink Sprite,Soft Drink
+130,P001,Parle-G Biscuits,Biscuits
+131,P013,Pepsi 500ml,Soft Drink
+131,P009,Bourbon Biscuit,Biscuits
+131,P001,Parle-G Biscuits,Biscuits
+131,P017,Aashirvaad Atta 5kg,Groceries
+131,P014,Coca Cola 500ml,Soft Drink
+131,P006,Maggie Noodles,Noodles
+131,P020,Milk Packet 500ml,Dairy
+131,P006,Maggie Noodles,Noodles
+132,P003,Good Day Cookies,Biscuits
+132,P002,Tata Tea,Tea
+132,P001,Parle-G Biscuits,Biscuits
+132,P017,Aashirvaad Atta 5kg,Groceries
+132,P001,Parle-G Biscuits,Biscuits
+133,P009,Bourbon Biscuit,Biscuits
+133,P005,Red Label Tea,Tea
+133,P005,Red Label Tea,Tea
+133,P016,Sugar Pack 1kg,Groceries
+133,P017,Aashirvaad Atta 5kg,Groceries
+134,P005,Red Label Tea,Tea
+134,P007,Chips Lays,Snacks
+134,P014,Coca Cola 500ml,Soft Drink
+134,P013,Pepsi 500ml,Soft Drink
+134,P001,Parle-G Biscuits,Biscuits
+134,P007,Chips Lays,Snacks
+134,P001,Parle-G Biscuits,Biscuits
+134,P002,Tata Tea,Tea
+135,P002,Tata Tea,Tea
+135,P006,Maggie Noodles,Noodles
+135,P004,Britannia Cake,Cake
+135,P004,Britannia Cake,Cake
+135,P006,Maggie Noodles,Noodles
+135,P001,Parle-G Biscuits,Biscuits
+135,P013,Pepsi 500ml,Soft Drink
+135,P005,Red Label Tea,Tea
+136,P020,Milk Packet 500ml,Dairy
+136,P002,Tata Tea,Tea
+136,P001,Parle-G Biscuits,Biscuits
+136,P012,Nescafe Coffee,Coffee
+136,P003,Good Day Cookies,Biscuits
+136,P017,Aashirvaad Atta 5kg,Groceries
+136,P009,Bourbon Biscuit,Biscuits
+137,P008,Kurkure,Snacks
+137,P010,Sunfeast Dark Fantasy,Cake
+137,P003,Good Day Cookies,Biscuits
+137,P002,Tata Tea,Tea
+137,P001,Parle-G Biscuits,Biscuits
+137,P008,Kurkure,Snacks
+137,P001,Parle-G Biscuits,Biscuits
+138,P005,Red Label Tea,Tea
+138,P009,Bourbon Biscuit,Biscuits
+138,P001,Parle-G Biscuits,Biscuits
+138,P005,Red Label Tea,Tea
+138,P003,Good Day Cookies,Biscuits
+138,P001,Parle-G Biscuits,Biscuits
+138,P007,Chips Lays,Snacks
+138,P004,Britannia Cake,Cake
+139,P013,Pepsi 500ml,Soft Drink
+139,P002,Tata Tea,Tea
+139,P002,Tata Tea,Tea
+139,P008,Kurkure,Snacks
+139,P010,Sunfeast Dark Fantasy,Cake
+139,P013,Pepsi 500ml,Soft Drink
+140,P005,Red Label Tea,Tea
+140,P005,Red Label Tea,Tea
+140,P020,Milk Packet 500ml,Dairy
+140,P014,Coca Cola 500ml,Soft Drink
+140,P007,Chips Lays,Snacks
+140,P018,Paneer 200g,Dairy
+141,P005,Red Label Tea,Tea
+141,P005,Red Label Tea,Tea
+141,P006,Maggie Noodles,Noodles
+141,P004,Britannia Cake,Cake
+141,P004,Britannia Cake,Cake
+141,P002,Tata Tea,Tea
+142,P002,Tata Tea,Tea
+142,P019,Soft Drink Sprite,Soft Drink
+142,P013,Pepsi 500ml,Soft Drink
+142,P019,Soft Drink Sprite,Soft Drink
+142,P002,Tata Tea,Tea
+142,P009,Bourbon Biscuit,Biscuits
+142,P004,Britannia Cake,Cake
+142,P008,Kurkure,Snacks
+143,P002,Tata Tea,Tea
+143,P003,Good Day Cookies,Biscuits
+143,P009,Bourbon Biscuit,Biscuits
+143,P006,Maggie Noodles,Noodles
+143,P016,Sugar Pack 1kg,Groceries
+143,P013,Pepsi 500ml,Soft Drink
+144,P009,Bourbon Biscuit,Biscuits
+144,P001,Parle-G Biscuits,Biscuits
+144,P019,Soft Drink Sprite,Soft Drink
+144,P008,Kurkure,Snacks
+144,P005,Red Label Tea,Tea
+144,P001,Parle-G Biscuits,Biscuits
+144,P015,Salted Butter,Dairy
+144,P008,Kurkure,Snacks
+145,P003,Good Day Cookies,Biscuits
+145,P014,Coca Cola 500ml,Soft Drink
+145,P018,Paneer 200g,Dairy
+145,P012,Nescafe Coffee,Coffee
+145,P003,Good Day Cookies,Biscuits
+145,P007,Chips Lays,Snacks
+145,P008,Kurkure,Snacks
+146,P012,Nescafe Coffee,Coffee
+146,P013,Pepsi 500ml,Soft Drink
+146,P002,Tata Tea,Tea
+146,P005,Red Label Tea,Tea
+146,P011,Oreo Biscuit,Biscuits
+146,P008,Kurkure,Snacks
+146,P006,Maggie Noodles,Noodles
+146,P005,Red Label Tea,Tea
+147,P009,Bourbon Biscuit,Biscuits
+147,P007,Chips Lays,Snacks
+147,P011,Oreo Biscuit,Biscuits
+147,P004,Britannia Cake,Cake
+147,P012,Nescafe Coffee,Coffee
+148,P004,Britannia Cake,Cake
+148,P004,Britannia Cake,Cake
+148,P003,Good Day Cookies,Biscuits
+148,P015,Salted Butter,Dairy
+148,P008,Kurkure,Snacks
+148,P002,Tata Tea,Tea
+148,P005,Red Label Tea,Tea
+149,P011,Oreo Biscuit,Biscuits
+149,P015,Salted Butter,Dairy
+149,P011,Oreo Biscuit,Biscuits
+149,P001,Parle-G Biscuits,Biscuits
+149,P007,Chips Lays,Snacks
+149,P002,Tata Tea,Tea
+149,P020,Milk Packet 500ml,Dairy
+150,P014,Coca Cola 500ml,Soft Drink
+150,P016,Sugar Pack 1kg,Groceries
+150,P013,Pepsi 500ml,Soft Drink
+150,P004,Britannia Cake,Cake
+150,P006,Maggie Noodles,Noodles
+151,P002,Tata Tea,Tea
+151,P003,Good Day Cookies,Biscuits
+151,P008,Kurkure,Snacks
+151,P006,Maggie Noodles,Noodles
+151,P015,Salted Butter,Dairy
+152,P008,Kurkure,Snacks
+152,P017,Aashirvaad Atta 5kg,Groceries
+152,P003,Good Day Cookies,Biscuits
+152,P005,Red Label Tea,Tea
+152,P003,Good Day Cookies,Biscuits
+152,P002,Tata Tea,Tea
+153,P010,Sunfeast Dark Fantasy,Cake
+153,P010,Sunfeast Dark Fantasy,Cake
+153,P006,Maggie Noodles,Noodles
+153,P013,Pepsi 500ml,Soft Drink
+153,P003,Good Day Cookies,Biscuits
+153,P009,Bourbon Biscuit,Biscuits
+153,P019,Soft Drink Sprite,Soft Drink
+153,P001,Parle-G Biscuits,Biscuits
+154,P002,Tata Tea,Tea
+154,P006,Maggie Noodles,Noodles
+154,P018,Paneer 200g,Dairy
+154,P001,Parle-G Biscuits,Biscuits
+154,P006,Maggie Noodles,Noodles
+154,P009,Bourbon Biscuit,Biscuits
+155,P020,Milk Packet 500ml,Dairy
+155,P003,Good Day Cookies,Biscuits
+155,P004,Britannia Cake,Cake
+155,P019,Soft Drink Sprite,Soft Drink
+155,P009,Bourbon Biscuit,Biscuits
+155,P004,Britannia Cake,Cake
+156,P002,Tata Tea,Tea
+156,P002,Tata Tea,Tea
+156,P005,Red Label Tea,Tea
+156,P001,Parle-G Biscuits,Biscuits
+156,P012,Nescafe Coffee,Coffee
+156,P018,Paneer 200g,Dairy
+156,P011,Oreo Biscuit,Biscuits
+156,P010,Sunfeast Dark Fantasy,Cake
+157,P003,Good Day Cookies,Biscuits
+157,P009,Bourbon Biscuit,Biscuits
+157,P001,Parle-G Biscuits,Biscuits
+157,P001,Parle-G Biscuits,Biscuits
+157,P013,Pepsi 500ml,Soft Drink
+158,P015,Salted Butter,Dairy
+158,P006,Maggie Noodles,Noodles
+158,P007,Chips Lays,Snacks
+158,P004,Britannia Cake,Cake
+158,P007,Chips Lays,Snacks
+158,P006,Maggie Noodles,Noodles
+159,P012,Nescafe Coffee,Coffee
+159,P006,Maggie Noodles,Noodles
+159,P002,Tata Tea,Tea
+159,P005,Red Label Tea,Tea
+159,P003,Good Day Cookies,Biscuits
+160,P004,Britannia Cake,Cake
+160,P008,Kurkure,Snacks
+160,P015,Salted Butter,Dairy
+160,P002,Tata Tea,Tea
+160,P009,Bourbon Biscuit,Biscuits
+160,P010,Sunfeast Dark Fantasy,Cake
+161,P008,Kurkure,Snacks
+161,P011,Oreo Biscuit,Biscuits
+161,P012,Nescafe Coffee,Coffee
+161,P019,Soft Drink Sprite,Soft Drink
+161,P001,Parle-G Biscuits,Biscuits
+161,P016,Sugar Pack 1kg,Groceries
+161,P020,Milk Packet 500ml,Dairy
+161,P006,Maggie Noodles,Noodles
+162,P002,Tata Tea,Tea
+162,P003,Good Day Cookies,Biscuits
+162,P009,Bourbon Biscuit,Biscuits
+162,P003,Good Day Cookies,Biscuits
+162,P003,Good Day Cookies,Biscuits
+163,P015,Salted Butter,Dairy
+163,P012,Nescafe Coffee,Coffee
+163,P003,Good Day Cookies,Biscuits
+163,P005,Red Label Tea,Tea
+163,P001,Parle-G Biscuits,Biscuits
+163,P002,Tata Tea,Tea
+163,P003,Good Day Cookies,Biscuits
+164,P012,Nescafe Coffee,Coffee
+164,P014,Coca Cola 500ml,Soft Drink
+164,P020,Milk Packet 500ml,Dairy
+164,P008,Kurkure,Snacks
+164,P001,Parle-G Biscuits,Biscuits
+164,P013,Pepsi 500ml,Soft Drink
+164,P002,Tata Tea,Tea
+164,P001,Parle-G Biscuits,Biscuits
+165,P011,Oreo Biscuit,Biscuits
+165,P004,Britannia Cake,Cake
+165,P010,Sunfeast Dark Fantasy,Cake
+165,P014,Coca Cola 500ml,Soft Drink
+165,P008,Kurkure,Snacks
+166,P003,Good Day Cookies,Biscuits
+166,P001,Parle-G Biscuits,Biscuits
+166,P006,Maggie Noodles,Noodles
+166,P020,Milk Packet 500ml,Dairy
+166,P003,Good Day Cookies,Biscuits
+167,P013,Pepsi 500ml,Soft Drink
+167,P008,Kurkure,Snacks
+167,P003,Good Day Cookies,Biscuits
+167,P018,Paneer 200g,Dairy
+167,P012,Nescafe Coffee,Coffee
+167,P003,Good Day Cookies,Biscuits
+167,P009,Bourbon Biscuit,Biscuits
+167,P011,Oreo Biscuit,Biscuits
+168,P002,Tata Tea,Tea
+168,P004,Britannia Cake,Cake
+168,P001,Parle-G Biscuits,Biscuits
+168,P010,Sunfeast Dark Fantasy,Cake
+168,P009,Bourbon Biscuit,Biscuits
+168,P015,Salted Butter,Dairy
+168,P020,Milk Packet 500ml,Dairy
+169,P014,Coca Cola 500ml,Soft Drink
+169,P008,Kurkure,Snacks
+169,P001,Parle-G Biscuits,Biscuits
+169,P003,Good Day Cookies,Biscuits
+169,P004,Britannia Cake,Cake
+170,P006,Maggie Noodles,Noodles
+170,P009,Bourbon Biscuit,Biscuits
+170,P009,Bourbon Biscuit,Biscuits
+170,P004,Britannia Cake,Cake
+170,P010,Sunfeast Dark Fantasy,Cake
+170,P010,Sunfeast Dark Fantasy,Cake
+171,P009,Bourbon Biscuit,Biscuits
+171,P002,Tata Tea,Tea
+171,P005,Red Label Tea,Tea
+171,P013,Pepsi 500ml,Soft Drink
+171,P014,Coca Cola 500ml,Soft Drink
+171,P018,Paneer 200g,Dairy
+171,P002,Tata Tea,Tea
+172,P001,Parle-G Biscuits,Biscuits
+172,P016,Sugar Pack 1kg,Groceries
+172,P017,Aashirvaad Atta 5kg,Groceries
+172,P016,Sugar Pack 1kg,Groceries
+172,P005,Red Label Tea,Tea
+172,P011,Oreo Biscuit,Biscuits
+173,P002,Tata Tea,Tea
+173,P003,Good Day Cookies,Biscuits
+173,P009,Bourbon Biscuit,Biscuits
+173,P002,Tata Tea,Tea
+173,P011,Oreo Biscuit,Biscuits
+173,P012,Nescafe Coffee,Coffee
+174,P020,Milk Packet 500ml,Dairy
+174,P015,Salted Butter,Dairy
+174,P008,Kurkure,Snacks
+174,P009,Bourbon Biscuit,Biscuits
+174,P006,Maggie Noodles,Noodles
+175,P005,Red Label Tea,Tea
+175,P002,Tata Tea,Tea
+175,P008,Kurkure,Snacks
+175,P001,Parle-G Biscuits,Biscuits
+175,P016,Sugar Pack 1kg,Groceries
+176,P018,Paneer 200g,Dairy
+176,P008,Kurkure,Snacks
+176,P007,Chips Lays,Snacks
+176,P003,Good Day Cookies,Biscuits
+176,P005,Red Label Tea,Tea
+177,P007,Chips Lays,Snacks
+177,P015,Salted Butter,Dairy
+177,P007,Chips Lays,Snacks
+177,P012,Nescafe Coffee,Coffee
+177,P001,Parle-G Biscuits,Biscuits
+178,P003,Good Day Cookies,Biscuits
+178,P017,Aashirvaad Atta 5kg,Groceries
+178,P011,Oreo Biscuit,Biscuits
+178,P001,Parle-G Biscuits,Biscuits
+178,P003,Good Day Cookies,Biscuits
+178,P017,Aashirvaad Atta 5kg,Groceries
+178,P003,Good Day Cookies,Biscuits
+179,P015,Salted Butter,Dairy
+179,P007,Chips Lays,Snacks
+179,P001,Parle-G Biscuits,Biscuits
+179,P012,Nescafe Coffee,Coffee
+179,P020,Milk Packet 500ml,Dairy
+180,P002,Tata Tea,Tea
+180,P005,Red Label Tea,Tea
+180,P011,Oreo Biscuit,Biscuits
+180,P003,Good Day Cookies,Biscuits
+180,P013,Pepsi 500ml,Soft Drink
+180,P008,Kurkure,Snacks
+181,P004,Britannia Cake,Cake
+181,P007,Chips Lays,Snacks
+181,P010,Sunfeast Dark Fantasy,Cake
+181,P002,Tata Tea,Tea
+181,P004,Britannia Cake,Cake
+181,P018,Paneer 200g,Dairy
+182,P003,Good Day Cookies,Biscuits
+182,P016,Sugar Pack 1kg,Groceries
+182,P003,Good Day Cookies,Biscuits
+182,P006,Maggie Noodles,Noodles
+182,P009,Bourbon Biscuit,Biscuits
+183,P009,Bourbon Biscuit,Biscuits
+183,P004,Britannia Cake,Cake
+183,P010,Sunfeast Dark Fantasy,Cake
+183,P019,Soft Drink Sprite,Soft Drink
+183,P001,Parle-G Biscuits,Biscuits
+183,P017,Aashirvaad Atta 5kg,Groceries
+183,P016,Sugar Pack 1kg,Groceries
+184,P004,Britannia Cake,Cake
+184,P012,Nescafe Coffee,Coffee
+184,P002,Tata Tea,Tea
+184,P005,Red Label Tea,Tea
+184,P002,Tata Tea,Tea
+184,P002,Tata Tea,Tea
+185,P001,Parle-G Biscuits,Biscuits
+185,P016,Sugar Pack 1kg,Groceries
+185,P018,Paneer 200g,Dairy
+185,P003,Good Day Cookies,Biscuits
+185,P004,Britannia Cake,Cake
+185,P004,Britannia Cake,Cake
+185,P018,Paneer 200g,Dairy
+185,P017,Aashirvaad Atta 5kg,Groceries
+186,P001,Parle-G Biscuits,Biscuits
+186,P004,Britannia Cake,Cake
+186,P020,Milk Packet 500ml,Dairy
+186,P006,Maggie Noodles,Noodles
+186,P017,Aashirvaad Atta 5kg,Groceries
+186,P009,Bourbon Biscuit,Biscuits
+186,P001,Parle-G Biscuits,Biscuits
+186,P009,Bourbon Biscuit,Biscuits
+187,P020,Milk Packet 500ml,Dairy
+187,P009,Bourbon Biscuit,Biscuits
+187,P001,Parle-G Biscuits,Biscuits
+187,P002,Tata Tea,Tea
+187,P012,Nescafe Coffee,Coffee
+187,P020,Milk Packet 500ml,Dairy
+187,P009,Bourbon Biscuit,Biscuits
+188,P020,Milk Packet 500ml,Dairy
+188,P012,Nescafe Coffee,Coffee
+188,P004,Britannia Cake,Cake
+188,P001,Parle-G Biscuits,Biscuits
+188,P015,Salted Butter,Dairy
+189,P001,Parle-G Biscuits,Biscuits
+189,P004,Britannia Cake,Cake
+189,P007,Chips Lays,Snacks
+189,P009,Bourbon Biscuit,Biscuits
+189,P007,Chips Lays,Snacks
+190,P003,Good Day Cookies,Biscuits
+190,P006,Maggie Noodles,Noodles
+190,P004,Britannia Cake,Cake
+190,P002,Tata Tea,Tea
+190,P005,Red Label Tea,Tea
+190,P001,Parle-G Biscuits,Biscuits
+190,P006,Maggie Noodles,Noodles
+190,P003,Good Day Cookies,Biscuits
+191,P015,Salted Butter,Dairy
+191,P002,Tata Tea,Tea
+191,P008,Kurkure,Snacks
+191,P012,Nescafe Coffee,Coffee
+191,P015,Salted Butter,Dairy
+191,P003,Good Day Cookies,Biscuits
+192,P017,Aashirvaad Atta 5kg,Groceries
+192,P015,Salted Butter,Dairy
+192,P004,Britannia Cake,Cake
+192,P005,Red Label Tea,Tea
+192,P015,Salted Butter,Dairy
+192,P006,Maggie Noodles,Noodles
+192,P001,Parle-G Biscuits,Biscuits
+193,P001,Parle-G Biscuits,Biscuits
+193,P008,Kurkure,Snacks
+193,P005,Red Label Tea,Tea
+193,P017,Aashirvaad Atta 5kg,Groceries
+193,P007,Chips Lays,Snacks
+193,P013,Pepsi 500ml,Soft Drink
+193,P005,Red Label Tea,Tea
+194,P016,Sugar Pack 1kg,Groceries
+194,P003,Good Day Cookies,Biscuits
+194,P001,Parle-G Biscuits,Biscuits
+194,P015,Salted Butter,Dairy
+194,P005,Red Label Tea,Tea
+194,P001,Parle-G Biscuits,Biscuits
+194,P015,Salted Butter,Dairy
+195,P011,Oreo Biscuit,Biscuits
+195,P007,Chips Lays,Snacks
+195,P012,Nescafe Coffee,Coffee
+195,P017,Aashirvaad Atta 5kg,Groceries
+195,P001,Parle-G Biscuits,Biscuits
+195,P014,Coca Cola 500ml,Soft Drink
+195,P009,Bourbon Biscuit,Biscuits
+195,P004,Britannia Cake,Cake
+196,P001,Parle-G Biscuits,Biscuits
+196,P008,Kurkure,Snacks
+196,P002,Tata Tea,Tea
+196,P001,Parle-G Biscuits,Biscuits
+196,P003,Good Day Cookies,Biscuits
+196,P017,Aashirvaad Atta 5kg,Groceries
+197,P009,Bourbon Biscuit,Biscuits
+197,P002,Tata Tea,Tea
+197,P005,Red Label Tea,Tea
+197,P003,Good Day Cookies,Biscuits
+197,P020,Milk Packet 500ml,Dairy
+198,P010,Sunfeast Dark Fantasy,Cake
+198,P002,Tata Tea,Tea
+198,P016,Sugar Pack 1kg,Groceries
+198,P001,Parle-G Biscuits,Biscuits
+198,P016,Sugar Pack 1kg,Groceries
+198,P004,Britannia Cake,Cake
+199,P011,Oreo Biscuit,Biscuits
+199,P004,Britannia Cake,Cake
+199,P017,Aashirvaad Atta 5kg,Groceries
+199,P017,Aashirvaad Atta 5kg,Groceries
+199,P009,Bourbon Biscuit,Biscuits
+199,P010,Sunfeast Dark Fantasy,Cake
+200,P003,Good Day Cookies,Biscuits
+200,P014,Coca Cola 500ml,Soft Drink
+200,P006,Maggie Noodles,Noodles
+200,P015,Salted Butter,Dairy
+200,P016,Sugar Pack 1kg,Groceries
+200,P009,Bourbon Biscuit,Biscuits

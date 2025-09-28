@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Vyapaar | Cart & Procurement Review</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'nexus-blue': '#1E40AF', // Deep Blue
+                        'dark-text': '#1F2937', // Dark Slate
+                        'light-bg': '#F9FAFB', // Near white
+                        'section-bg': '#EBF4FF', // Very light blue (Used for backgrounds)
+                        'stat-green': '#059669', // Emerald
+                        'stat-red': '#DC2626',   // Red (Used for MOQ warnings)
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Base styles */
+        html { scroll-behavior: smooth; }
+
+        /* General Button Style */
+        .cta-primary {
+            @apply px-6 py-3 text-base font-bold rounded-xl transition duration-300 transform hover:scale-[1.02] shadow-lg;
+        }
+
+        /* Input field style */
+        .form-input {
+            @apply w-full border border-gray-300 rounded-lg p-3 text-dark-text focus:ring-2 focus:ring-nexus-blue focus:border-nexus-blue transition duration-200;
+        }
+        /* Style for Quantity controls */
+        .qty-button {
+            @apply p-2 border border-gray-300 bg-gray-50 text-dark-text hover:bg-gray-200 transition duration-150;
+        }
+    </style>
+</head>
+<body class="font-sans text-dark-text bg-light-bg min-h-screen flex flex-col">
+
+    <!-- Header (Navigation Bar) -->
+    <header class="bg-white shadow-md sticky top-0 z-40">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Group 1: Logo and Main Nav Links (Left Side) -->
+            <div class="flex items-center space-x-8">
+                <!-- Logo -->
+                <a href="index.html" class="text-3xl font-extrabold text-nexus-blue tracking-tight hover:opacity-90 transition duration-300">
+                    NexusVyapaar
+                </a>
+                <!-- Navigation Links (Desktop Only) -->
+                <div class="hidden md:flex space-x-6 text-dark-text font-medium items-center">
+                    <a href="index.html" class="hover:text-nexus-blue transition duration-200">Home</a>
+                    <a href="shop.html" class="hover:text-nexus-blue transition duration-200">Shop</a>
+                    <a href="my_portal.html" class="hover:text-nexus-blue transition duration-200">My Portal</a>
+                </div>
+            </div>
+            <!-- Group 2: User Info & Login/Register Link (Right Side) -->
+            <div class="flex items-center space-x-4">
+                <!-- Login/Register Button -->
+                <a href="login.html" class="hidden md:inline-block cta-primary bg-white text-nexus-blue border-2 border-nexus-blue py-2 px-4 text-sm hover:bg-nexus-blue hover:text-white shadow-none">
+                    Login/Register
+                </a>
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-button" class="md:hidden p-2 text-dark-text hover:text-nexus-blue">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu Flyout -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg border-t border-gray-100 absolute w-full">
+            <a href="index.html" class="block px-4 py-2 text-dark-text hover:bg-section-bg">Home</a>
+            <a href="shop.html" class="block px-4 py-2 text-dark-text hover:bg-section-bg">Shop</a>
+            <a href="my_portal.html" class="block px-4 py-2 text-dark-text hover:bg-section-bg">My Portal</a>
+            <a href="login.html" class="block px-4 py-3 bg-white text-nexus-blue border-t border-nexus-blue text-center font-bold hover:bg-gray-50">Login/Register</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-extrabold text-dark-text mb-8 border-b border-gray-300 pb-3">Procurement Cart</h1>
+
+            <div class="lg:grid lg:grid-cols-3 lg:gap-10">
+                
+                <!-- Left Column: Cart Items List -->
+                <section class="lg:col-span-2 space-y-6">
+
+                    <!-- Cart Item 1: Compliant MOQ -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                        <div class="flex items-center space-x-4">
+                            <!-- Product Image Placeholder -->
+                            <div class="w-20 h-20 bg-section-bg rounded-lg flex items-center justify-center text-nexus-blue/70">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10m0-10l-8-4m8 4l8-4m-8 4V7"></path></svg>
+                            </div>
+                            
+                            <div class="flex-grow">
+                                <h2 class="text-xl font-semibold text-dark-text">Industrial-Grade Steel Bolts (M16)</h2>
+                                <p class="text-sm text-gray-500">Supplier: Apex Manufacturing Co.</p>
+                                <p class="text-sm font-medium text-stat-green mt-1">MOQ Met (5,000 units required)</p>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <!-- Quantity Control -->
+                                <div class="flex border rounded-lg overflow-hidden">
+                                    <button class="qty-button text-xl rounded-none">-</button>
+                                    <input type="number" value="5000" class="w-20 text-center border-l border-r border-gray-300 focus:outline-none" min="5000">
+                                    <button class="qty-button text-xl rounded-none">+</button>
+                                </div>
+                                
+                                <button class="p-2 text-gray-500 hover:text-stat-red transition duration-150" aria-label="Remove item">
+                                    <!-- Trash Icon -->
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 2: NON-Compliant MOQ -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                        <div class="flex items-center space-x-4">
+                            <!-- Product Image Placeholder -->
+                            <div class="w-20 h-20 bg-section-bg rounded-lg flex items-center justify-center text-nexus-blue/70">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            
+                            <div class="flex-grow">
+                                <h2 class="text-xl font-semibold text-dark-text">Bulk Polymer Resin (ABS Grade)</h2>
+                                <p class="text-sm text-gray-500">Supplier: Eastern Chem Dynamics</p>
+                                <div class="flex items-center mt-1 space-x-2">
+                                    <svg class="w-4 h-4 text-stat-red" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                                    <p class="text-sm font-medium text-stat-red">MOQ Not Met (50 tons required)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4">
+                                <!-- Quantity Control -->
+                                <div class="flex border rounded-lg overflow-hidden border-stat-red">
+                                    <button class="qty-button text-xl rounded-none">-</button>
+                                    <input type="number" value="30000" class="w-20 text-center border-l border-r border-gray-300 focus:outline-none bg-red-50" min="50000">
+                                    <button class="qty-button text-xl rounded-none">+</button>
+                                </div>
+                                
+                                <button class="p-2 text-gray-500 hover:text-stat-red transition duration-150" aria-label="Remove item">
+                                    <!-- Trash Icon -->
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Continue Shopping Link -->
+                    <div class="pt-4 flex justify-between items-center">
+                        <a href="shop.html" class="text-nexus-blue font-semibold hover:underline">
+                            &larr; Continue Shopping
+                        </a>
+                        <button class="text-gray-500 hover:text-dark-text font-medium transition duration-200">
+                            Clear Cart
+                        </button>
+                    </div>
+
+                </section>
+
+                <!-- Right Column: Order Summary / RFQ Details -->
+                <aside class="lg:col-span-1 mt-10 lg:mt-0">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-nexus-blue/50 sticky top-24">
+                        <h2 class="text-2xl font-bold text-dark-text border-b border-gray-200 pb-3 mb-4">RFQ / Checkout Summary</h2>
+                        
+                        <!-- Reference ID Input (B2B Feature) -->
+                        <div class="mb-5">
+                            <label for="ref-id" class="block text-sm font-medium text-gray-700 mb-1">Project / Internal Reference ID</label>
+                            <input type="text" id="ref-id" placeholder="Optional (e.g., P-4530-Q4)" class="form-input">
+                        </div>
+
+                        <!-- Subtotal Section -->
+                        <div class="space-y-3">
+                            <div class="flex justify-between text-base">
+                                <span>Total Estimated Value:</span>
+                                <span class="font-semibold text-dark-text">50,000 USD</span>
+                            </div>
+                            <div class="flex justify-between text-base">
+                                <span>Shipping (Estimate):</span>
+                                <span class="font-semibold text-dark-text">TBD</span>
+                            </div>
+                            <div class="flex justify-between text-base">
+                                <span>Tax/Duties (Estimate):</span>
+                                <span class="font-semibold text-dark-text">TBD</span>
+                            </div>
+                        </div>
+
+                        <hr class="my-4 border-gray-200">
+
+                        <div class="flex justify-between text-lg font-bold">
+                            <span>Total RFQ Value:</span>
+                            <span class="text-nexus-blue">50,000 USD</span>
+                        </div>
+                        
+                        <!-- CTA Button -->
+                        <button class="w-full cta-primary bg-nexus-blue text-white mt-6 hover:bg-blue-700 disabled:opacity-50" disabled>
+                            Proceed to RFQ Submission
+                        </button>
+
+                        <p class="text-xs text-center text-gray-500 mt-3">
+                            *Final prices and terms are negotiated upon RFQ submission.
+                        </p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="about" class="bg-dark-text text-white py-6 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:flex md:justify-between md:items-center">
+            <p class="text-sm opacity-80">&copy; 2024 Nexus Vyapaar. All rights reserved.</p>
+            <div class="mt-2 md:mt-0 space-x-6 text-xs">
+                <a href="#" class="hover:text-nexus-blue/70 transition duration-300">Support</a>
+                <a href="#" class="hover:text-nexus-blue/70 transition duration-300">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Toggle Mobile Nav Menu
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
