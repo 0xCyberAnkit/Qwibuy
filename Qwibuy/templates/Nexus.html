@@ -86,14 +86,14 @@
             <!-- Group 1: Logo and Main Nav Links (Left Side) -->
             <div class="flex items-center space-x-8">
                 <!-- Logo -->
-                <a href="Nexus.html" class="text-3xl font-extrabold text-nexus-blue tracking-tight transition duration-300">
+                <a href="/" class="text-3xl font-extrabold text-nexus-blue tracking-tight transition duration-300">
                     Qwibuy
                 </a>
 
                 <!-- Navigation Links (Desktop Only) -->
                 <div class="hidden md:flex space-x-6 text-dark-text font-medium items-center">
                     <!-- Active link for Home -->
-                    <a href="" class="text-nexus-blue border-b-2 border-nexus-blue pb-1">Home</a>
+                    <a href="/" class="text-nexus-blue border-b-2 border-nexus-blue pb-1">Home</a>
                     <a href="/shop" class="hover:text-nexus-blue transition duration-200">Shop</a>
                     <a href="/portal" class="hover:text-nexus-blue transition duration-200">My Portal</a>
                     <a href="/profile" class="hover:text-nexus-blue transition duration-200">Profile</a>
@@ -103,8 +103,12 @@
             <!-- Group 2: User Info & Login/Register Link (Right Side) -->
             <div class="flex items-center space-x-4">
                 <!-- Login/Register Button -->
-                <a href="login.html" class="hidden md:inline-block cta-primary bg-white text-nexus-blue border-2 border-nexus-blue py-2 px-4 text-sm hover:bg-nexus-blue hover:text-white shadow-none">
+                <a href="/auth" class="hidden md:inline-block cta-primary bg-white text-nexus-blue border-2 border-nexus-blue py-2 px-4 text-sm hover:bg-nexus-blue hover:text-white shadow-none">
+                  {% if name %}
                   {{name}}
+                  {% else %}
+                  Login / Signup
+                  {% endif %}
                 </a>
 
                 <!-- Mobile Menu Toggle -->
@@ -116,11 +120,15 @@
 
         <!-- Mobile Menu Flyout -->
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg border-t border-gray-100 absolute w-full">
-            <a href="nexus.html" class="block px-4 py-2 text-nexus-blue bg-section-bg font-semibold">Home</a>
-            <a href="shop.html" class="block px-4 py-2 text-dark-text hover:bg-section-bg">Shop</a>
-            <a href="my portal.html" class="block px-4 py-2 text-dark-text hover:bg-section-bg">My Portal</a>
-            <a href="my portal.html" class="block px-4 py-2 text-dark-text hover:bg-section-bg">Profile</a>
-            <a href="login.html" class="block px-4 py-3 bg-white text-nexus-blue border-t border-nexus-blue text-center font-bold hover:bg-gray-50">Login/Register</a>
+            <a href="/" class="block px-4 py-2 text-nexus-blue bg-section-bg font-semibold">Home</a>
+            <a href="/shop" class="block px-4 py-2 text-dark-text hover:bg-section-bg">Shop</a>
+            <a href="/portal" class="block px-4 py-2 text-dark-text hover:bg-section-bg">My Portal</a>
+            <a href="/profile" class="block px-4 py-2 text-dark-text hover:bg-section-bg">Profile</a>
+            <a href="/auth" class="block px-4 py-3 bg-white text-nexus-blue border-t border-nexus-blue text-center font-bold hover:bg-gray-50">{% if name %}
+                  {{name}}
+                  {% else %}
+                  Login / Signup
+                  {% endif %}</a>
         </div>
     </header>
 
@@ -141,11 +149,11 @@
           Connect directly with vetted manufacturers worldwide. Get multiple quotes, compare transparently, and manage your entire supply chain in one powerful platform.
         </p>
         <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-          <a href="my portal.html" class="cta-primary bg-nexus-blue text-white hover:bg-blue-700">
-            Start Your First RFQ
+          <a href="/shop" class="cta-primary bg-nexus-blue text-white hover:bg-blue-700">
+            Shop Now
           </a>
-          <a href="shop.html" class="cta-primary bg-white text-dark-text border-2 border-gray-300 hover:bg-gray-50 shadow-none">
-            Explore Supplier Directory
+          <a href="/demo" class="cta-primary bg-white text-dark-text border-2 border-gray-300 hover:bg-gray-50 shadow-none">
+            Prototype Demo
           </a>
         </div>
       </div>
@@ -176,16 +184,18 @@
     </section>
 
     <!-- CTA Banner -->
+     {% if not name %}
     <section class="bg-nexus-blue py-16 fade-in">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Ready to Transform Your Procurement?</h2>
         <p class="text-xl text-blue-200 mb-8">Get started with a free account today.</p>
-        <a href="login.html" class="cta-primary bg-stat-green text-white hover:bg-green-600">
+        <a href="/auth" class="cta-primary bg-stat-green text-white hover:bg-green-600">
           Sign Up Now
         </a>
       </div>
     </section>
-
+    {% else %}
+    {% endif %}
   </main>
 
   <!-- Footer -->
