@@ -23,5 +23,6 @@ urlpatterns = [
     path('shop/',include('webcode.urls')),
     path('profile/',include('webcode.urls')),
     path('portal/',include('webcode.urls')),
+    path('demo/',include('webcode.urls')),
     path('auth/',include('webcode.urls'))
 ]
