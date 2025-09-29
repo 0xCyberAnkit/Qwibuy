@@ -133,6 +133,7 @@ def simulate_purchase(request):
 
 def auth(request):
     request.session['email'] = None
+    request.session['name'] = None
     server()
     if request.method == 'POST':
         data = {}
@@ -168,12 +169,8 @@ def auth(request):
 
 def index(request):
     server()
-    email = request.session.get('email')
-    if not email:
-        return redirect('/auth')
     data = {
-        "name":request.session.get('name'),
-        "uid":request.session.get('uid')+100
+        "name":request.session.get('name')
     }
     return render(request,"Nexus.html",data)
 
@@ -210,3 +207,5 @@ def portal(request):
     }
     return render(request,"myportal.html",data)
 
+def demo(request):
+    return render(request,"demo.html")
