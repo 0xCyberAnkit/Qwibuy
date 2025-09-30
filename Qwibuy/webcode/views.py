@@ -193,19 +193,13 @@ def profile(request):
     data = {
         "name":request.session.get('name'),
         "email":request.session.get('email'),
-        "uid":int(request.session.get('uid'))+100
+        "uid":int(request.session.get('uid'))+100,
+        "name_logo":request.session.get('name')[0].upper()
     }
     return render(request,"profile.html",data)
 
 def portal(request):
-    server()
-    email = request.session.get('email')
-    if not email:
-        return redirect('/auth')
-    data = {
-        "uid":request.session.get('uid')+100
-    }
-    return render(request,"myportal.html",data)
+    return redirect('/demo')
 
 def demo(request):
     return render(request,"demo.html")
