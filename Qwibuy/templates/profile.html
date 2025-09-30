@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile - Nexus Vyapaar</title>
+{% extends "Nexus.html" %}
+{% block load %}
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Configure Tailwind for custom styles -->
@@ -59,57 +55,9 @@
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
         }
     </style>
-</head>
-<body class="bg-accent-light text-gray-800 antialiased">
+{% endblock load %}
 
-    <!-- Header / Navigation (Reusing the structure from index.html) -->
-    <header class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <a href="index.html" class="text-nexus-blue text-2xl font-extrabold text-primary tracking-tight">
-                    NexusVyapaar
-                </a>
-
-                <!-- Desktop Navigation (Simplified for internal pages) -->
-                <nav class="hidden md:flex space-x-8">
-                    <a href="" class="text-gray-600 hover:text-primary transition duration-150 ease-in-out font-medium">Shop</a>
-                    <a href="#" class="text-gray-600 hover:text-primary transition duration-150 ease-in-out font-medium">New Arrivals</a>
-                    <a href="#" class="text-gray-600 hover:text-primary transition duration-150 ease-in-out font-medium">Sales</a>
-                    <a href="profile.html" class="text-gray-600 hover:text-primary transition duration-150 ease-in-out font-medium">About</a>
-                    <a href="#" class="text-primary font-bold transition duration-150 ease-in-out">My Account</a>
-                    <a href="#" class="text-gray-600 hover:text-primary transition duration-150 ease-in-out font-medium">Logout</a>
-                </nav>
-
-                <!-- Icons (Cart, Mobile Menu) -->
-                <div class="flex items-center space-x-4">
-                    <!-- Cart Icon -->
-                    <button class="p-2 text-gray-600 hover:text-primary focus:outline-none relative">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                        <span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">3</span>
-                    </button>
-                    <!-- User Icon -->
-                    <a class="p-2 text-gray-600 hover:text-primary focus:outline-none"
-                    href="profile.html"> 
-                    
-                        <!-- Simple user icon SVG -->
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-                    </a>
-                    <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600 hover:text-primary focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-3 space-y-1 border-t">
-            <a href="index.html" class="block py-2 text-gray-600 hover:text-primary font-medium">Home</a>
-            <a href="#" class="block py-2 text-primary font-bold border-l-4 border-primary pl-4">My Account</a>
-            <a href="#" class="block py-2 text-gray-600 hover:text-primary font-medium">Logout</a>
-        </div>
-    </header>
-
+{% block main %}
     <!-- Main Content Area -->
     <main class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <h1 class="text-4xl font-extrabold text-gray-900 mb-8">My Account Dashboard</h1>
@@ -154,12 +102,13 @@
                 <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg mb-8 border-l-4 border-primary">
                     <div class="flex items-center justify-between">
                         <div>
-                            <p class="text-xl md:text-2xl font-semibold text-gray-900">Welcome back, Jane Doe!</p>
-                            <p class="text-gray-500 mt-1">Ready to manage your Stellar account?</p>
+                            <p class="text-xl md:text-2xl font-semibold text-gray-900">Welcome back, {{name}}!</p>
+                            <p class="text-gray-500 mt-1">Email ID: {{email}}</p>
+                            <p class="text-gray-500 mt-1">Ready to manage your account?</p>
                         </div>
                         <!-- Profile Image Placeholder -->
                         <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold text-2xl border-2 border-primary">
-                            JD
+                            {{name_logo}}
                         </div>
                     </div>
                 </div>
@@ -310,4 +259,5 @@
     });
     </script>
 </body>
-</html>
+{% endblock main %}
+
