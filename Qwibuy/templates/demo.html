@@ -46,10 +46,11 @@
     </style>
 </head>
 <body>
-    <h1>🛒 Retailer Recommendations</h1>
+    <h1>🛒 Retailer Recommendations Prototype</h1>
 
     <div>
-        <input type="number" id="retailer_id" placeholder="Enter Retailer ID" />
+        <button onclick="goBack()">Go To HomePage</button>
+        <input type="number" id="retailer_id" placeholder="Enter Retailer ID Between 101 To 200" />
         <button onclick="fetchRecommendations()">Get Recommendations</button>
     </div>
 
@@ -115,6 +116,9 @@
 
             // Refresh recommendations
             fetchRecommendations();
+        }
+        function goBack() {
+            location.replace("http://127.0.0.1:8000/");
         }
     </script>
 </body>
